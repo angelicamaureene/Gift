@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #e10600; /* Ferrari red */
+  font-size: 2.5em;
+}
+
+#maze {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 1px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #2c2c2c; /* Asphalt */
+  border: 1px solid #333;
+}
+
+.wall {
+  background: #e10600; /* Ferrari Red for barriers */
+}
+
+.player {
+  background-image: url('f1car.png'); /* Your F1 car image */
+  background-size: cover;
+  background-position: center;
+}
+
+.goal {
+  background: #ffd700; /* Gold finish line */
+  background-image: url('checkered-flag.png'); /* Finish flag image */
+  background-size: cover;
+  background-position: center;
+}
